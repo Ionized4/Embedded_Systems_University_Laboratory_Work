@@ -1,9 +1,28 @@
-# Embedded_Systems_University_Laboratory_Work
-This repository contains a sample of university laboratory work related to embedded systems.  Systems were implemented using assembly language and C for the ATMEGA4809.
+# Embedded Systems Laboratory Work
 
-Some files included (primarily drivers) may not be my own and were provided by Dr Kenneth Short and Bryant Gonzaga at Stony Brook University, or may have been provided through peripheral component documentation.
+This repository contains selected laboratory assignments from coursework in Embedded Systems at Stony Brook University. The projects demonstrate embedded software programming using assembly and C languages on the ATmega4809 microcontroller platform.
 
-The ESE381_Lab11_src folder contains the C source code for a program that read raw values from a Carbon Dioxide sensor, a temperature sensor, and a humidity sensor, parse them into their decimal values, and write them to a connected LCD display.
-The CO2 value was also processed and displayed on an LED bargraph peripheral, connected to the MCU via I2C using the MCP23017 GPIO expander.
+## Lab Summaries:
 
-The ESE280_Lab11_temp_meas_src folder contains the assembly source code and schematic diagram for a program that read an analog voltage from a temperature sensor and converted it into a digital value and displayed it to a seven segment display.
+### 📌 [ESE381 Lab 11: Sensor Data Acquisition and Display](ESE381_Lab11_src/)
+- **Language:** C
+- **Objective:** Read data from carbon dioxide, temperature, and humidity sensors.
+- **Peripherals Used:** LCD display, LED bargraph, MCP23017 GPIO expander (I²C)
+- **Description:** Sensor data is parsed into readable formats and displayed on an LCD. The CO₂ sensor readings also drive an LED bargraph indicator.
+
+### 📌 [ESE280 Lab 11: Temperature Measurement](ESE280_Lab11_temp_meas_src/)
+- **Language:** Assembly
+- **Objective:** Convert analog voltage from a temperature sensor to a digital value.
+- **Peripherals Used:** Seven-segment display, ADC module
+- **Description:** Reads sensor data via ADC, performs conversion, and displays results on a seven-segment display.
+
+## Attribution:
+- Most code is original work. Some peripheral drivers were provided by Dr. Kenneth Short and Bryant Gonzaga (Stony Brook University) or extracted from official peripheral documentation.
+
+## Build and Execution:
+- **Assembly projects:** Assemble using AVR-GCC assembler or similar tools.
+- **C projects:** Compile using AVR-GCC or your preferred IDE (e.g., Atmel Studio, Microchip MPLAB X).
+- Schematics are provided within relevant lab directories.
+
+## Microcontroller Platform:
+- **Target MCU:** ATmega4809
